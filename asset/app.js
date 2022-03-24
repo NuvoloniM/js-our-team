@@ -57,6 +57,17 @@ for (let i = 0; i < team.length; i++) {
     //ciclo for in che guarda ogni 'chiave' nell'oggetto i (che dipende dal for) 
     for (const key in team[i]) {
         console.log(`${key} -> ${team[i][key]}`)
-    }
-    
+    }  
+}
+
+//Milestone 2: stampare i dati all'interno di un contenitore nella pagina html in modo dinamico,
+//creando per ciascun membro del team un elemento che conterrà i suoi dati.
+//target in html
+let test = document.getElementById('test');
+//ripeto ciclo ma invece di console.log, stampo in html 
+for (let i = 0; i < team.length; i++) {
+    //ciclo for in che guarda ogni 'chiave' nell'oggetto i (che dipende dal for) 
+    for (const key in team[i]) {
+        test.innerHTML += (`<div> ${key} -> ${team[i][key]} </div>`);
+    }  
 }

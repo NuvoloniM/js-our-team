@@ -16,6 +16,7 @@ Cosa conterrà il campo che rappresenta la foto in ciascun oggetto?
 Come possiamo fare per trasformarla in effettiva immagine visibile nell'html ?
 */
 
+//inizializzo l'array con i dati del team
 let team = [
     {
         'nome': 'Wayne Barnett',
@@ -25,27 +26,37 @@ let team = [
     {
         'nome': 'Angela Caroll',
         'ruolo': 'Chief Editor',
-        'foto': 'wayne-barnett-founder-ceo.jpg'
+        'foto': 'angela-caroll-chief-editor.jpg'
     },
     {
         'nome': 'Walter Gordon',
         'ruolo': 'Office Manager',
-        'foto': 'wayne-barnett-founder-ceo.jpg'
+        'foto': 'walter-gordon-office-manager.jpg'
     },
     {
         'nome': 'Angela Lopez',
         'ruolo': 'Social Media Manager',
-        'foto': 'wayne-barnett-founder-ceo.jpg'
+        'foto': 'angela-lopez-social-media-manager.jpg'
     },
     {
         'nome': 'Scott Estrada',
         'ruolo': 'Developer',
-        'foto': 'wayne-barnett-founder-ceo.jpg'
+        'foto': 'scott-estrada-developer.jpg'
     },
     {
         'nome': 'Barbara Ramos',
         'ruolo': 'Graphic Designer',
-        'foto': 'wayne-barnett-founder-ceo.jpg'
+        'foto': 'barbara-ramos-graphic-designer.jpg'
     }
 ]
 
+//Milestone 1: stampare in console l'elenco dei membri del team,
+//scrivendo separatamente i dettagli di ciascun componente.
+//ciclo for per muovermi in ogni position dell'array
+for (let i = 0; i < team.length; i++) {
+    //ciclo for in che guarda ogni 'chiave' nell'oggetto i (che dipende dal for) 
+    for (const key in team[i]) {
+        console.log(`${key} -> ${team[i][key]}`)
+    }
+    
+}

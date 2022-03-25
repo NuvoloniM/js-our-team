@@ -60,7 +60,7 @@ for (let i = 0; i < team.length; i++) {
     `
     <div class="col-12 col-md-6 col-lg-4 py-3">
         <div class="card">
-            <img src="./asset/img/${team[i]['foto']}" class="card-img-top" alt="foto di ${team[i]['nome']}"">
+            <img src="./asset/img/${team[i]['foto']}" class="card-img-top" alt="foto di ${team[i]['nome']}">
             <div class="card-body text-center">
                 <h5 class="card-title">${team[i]['nome']}</h5>
                 <p class="card-text">${team[i]['ruolo']}</p>
